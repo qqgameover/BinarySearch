@@ -8,7 +8,7 @@ namespace BinarySearch
         {
             var numArray = new[] {1, 9, 3, 11, 1099, 14, 12, 11, 35, 10, 19, 183};
             Array.Sort(numArray);
-            Console.WriteLine(BinarySearchDisplay(numArray, 1));
+            Console.WriteLine(BinarySearchDisplay(numArray, 14));
         }
         public static object BinarySearchDisplay(int[] arr, int key)
         {
@@ -32,7 +32,7 @@ namespace BinarySearch
                     minNum = mid + 1;
                 }
             }
-            return "None";
+            return "Not in the array.";
         }
     }
 }
